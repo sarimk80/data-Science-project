@@ -1,0 +1,15 @@
+train: C:/Users/Babar/OneDrive - Institute of Business Administration/archive/images/train2019/
+val: C:/Users/Babar/OneDrive - Institute of Business Administration/archive/images/val2019/
+nc: 11
+names:
+  ["1_puffed_food",
+ "2_puffed_food",
+ "3_puffed_food",
+ "'4_puffed_food'",
+ "'5_puffed_food'",
+ "'6_puffed_food'",
+ "'7_puffed_food'",
+ "'8_puffed_food'",
+ "'9_puffed_food'",
+ "'10_puffed_food'",'ghjh'
+ ]
