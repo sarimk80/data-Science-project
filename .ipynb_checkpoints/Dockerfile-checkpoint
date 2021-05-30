@@ -27,6 +27,7 @@ RUN pip3 install ipython
 RUN pip3 install -U scikit-learn
 RUN pip3 install seaborn
 RUN pip3 install python-multipart
+RUN pip3 install azure-storage-blob==2.1.0 
 
 # Install dependencies
 #COPY requirements.txt .
@@ -45,6 +46,8 @@ WORKDIR /usr/src/app/master/yolov5
 
 #CMD pwd
 EXPOSE 80
+
+CMD ["export", "AZURE_STORAGE_CONNECTIONSTRING", "DefaultEndpointsProtocol=https;AccountName=23237iba;AccountKey=0jdjVZ68D9aVSZqcVJOkrvV3X8+/kUZU/Lza3GKqzu4vhOdCuCLkg3SgV8DxEbymI/PrEFwkLXatr2RUg+vxrw==;EndpointSuffix=core.windows.net"]
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 #CMD ["uvicorn" , "main:app"]
